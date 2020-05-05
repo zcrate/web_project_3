@@ -17,3 +17,9 @@
     margin: 34px auto 0;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 90%;
+  }
+}

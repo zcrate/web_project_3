@@ -1,0 +1,14 @@
+.places__title {
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.09;
+}
+
+
+@media screen and (min-width: 768px) {
+  .places__title {
+    width: 100%;
+  }
+}
