@@ -1,6 +1,19 @@
 @import url('./__lang-links/header__lang-links.css');
 
+@import url('./__lang-link/header__lang-link.css');
+
 .header {
-  margin: 0 auto;
-  padding: 20px auto 0;
+  margin: 20px auto 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 34px auto 0;
+  }
 }
