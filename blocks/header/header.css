@@ -1,0 +1,6 @@
+@import url('./__lang-links/header__lang-links.css');
+
+.header {
+  margin: 0 auto;
+  padding: 20px auto 0;
+}
