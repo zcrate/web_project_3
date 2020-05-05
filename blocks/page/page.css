@@ -4,3 +4,9 @@
   font-family: Inter;
   color: #fff;
 }
+
+@media screen and (min-width: 1024px) {
+  .page {
+    width: 90%;
+  }
+}
