@@ -1,6 +1,8 @@
 @import url('./__card/places__card.css');
 @import url('./__title/places__title.css');
 @import url('./__website/places__website.css');
+@import url('./__website-header/places__website-header.css');
+@import url('./__website-link/places__website-link.css');
 @import url('./__image/places__image.css');
 @import url('./__paragraph/places__paragraph.css');
 
@@ -15,5 +17,11 @@
 @media screen and (min-width: 768px) {
   .places {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 1093px) {
+  .places {
+    width: 984px;
   }
 }
