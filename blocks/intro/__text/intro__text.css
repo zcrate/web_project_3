@@ -4,3 +4,15 @@
   font-size: 16px;
   line-height: 1.62;
 }
+
+@media screen and (min-width: 768px) {
+  .intro__text {
+    width: calc(720px - 30 * ((100vw - 768px)/256));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__text {
+    width: 690px;
+  }
+}

@@ -5,6 +5,18 @@
   width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-template-rows: repeat(auto-fit, 1fr);
+
   grid-gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .photo-grid {
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .photo-grid {
+    width: 100%;
+  }
 }

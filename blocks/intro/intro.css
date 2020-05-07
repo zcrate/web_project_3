@@ -9,9 +9,28 @@
 @import url('./__span-accent/intro__span-accent.css');
 
 .intro {
-  margin: 64px auto;
+  margin: calc(64px + 24 * ((100vw - 320px)/448)) auto;
   width: 90%;
+  max-width: 984px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    margin: calc(88px + 4 * ((100vw - 768px)/256)) auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin: 92px auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro {
+    width: 83%;
+  }
 }

@@ -1,10 +1,5 @@
 .logo {
   margin: 0;
-  height: 36px;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    height: 44px;
-  }
+  height: calc(36px + 8 * ((100vw - 320px)/448));
+  max-height: 44px;
 }

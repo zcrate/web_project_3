@@ -2,5 +2,18 @@
   margin: 40px 0 0;
   font-weight: 400;
   font-size: 24px;
-  line-height: 125%
+  line-height: calc(1.25 + 0.17 * ((100vw - 320px)/448));
+}
+
+@media screen and (min-width: 768px) {
+  .intro__subtitle {
+    width: calc(720px - 30 * ((100vw - 768px)/256));
+    line-height: 1.42;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__subtitle {
+    width: 690px;
+  }
 }

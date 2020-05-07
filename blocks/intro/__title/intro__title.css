@@ -1,6 +1,19 @@
 .intro__title {
   font-weight: 900;
-  font-size: 32px;
+  font-size: calc(32px + 22 * ((100vw - 320px)/448));
   line-height: 1.09;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .intro__title {
+    width: calc(720px - 30 * ((100vw - 768px)/256));
+    font-size: 54px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__title {
+    width: 690px;
+  }
 }
