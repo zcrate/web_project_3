@@ -8,12 +8,7 @@
 @media screen and (min-width: 768px) {
   .intro__subtitle {
     width: calc(720px - 30 * ((100vw - 768px)/256));
+    max-width: 690px;
     line-height: 1.42;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .intro__subtitle {
-    width: 690px;
   }
 }

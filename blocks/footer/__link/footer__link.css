@@ -4,6 +4,11 @@
   line-height: 1;
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.5s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 640px) {
