@@ -1,4 +1,4 @@
-# Project 3: From Portland to Portland
+# Project 3: [From Portland to Portland](https://zcrate.github.io/web_project_3/)
 
 ### Overview
 * Intro
@@ -31,7 +31,7 @@ Frequented a calculation to keep smooth element scaling relative to viewport wid
 calc(minsize-v + (maxsize - minsize) * ((100vw - [minwidth-v])/(maxwidth - minwidth)))
 ```
 
-The *minsize* and *maxsize* above relate to element size and the *midwidth* and *maxwidth* relate to viewport size, with *-v* indicating value denomination in the calculation.
+The *minsize* and *maxsize* above relate to element size and the *midwidth* and *maxwidth* relate to viewport size, with *-v* indicating length unit value* in the calculation.
 
 Example: 
 ```CSS
@@ -41,3 +41,5 @@ Example:
 }
 ```
 This formula allowed me to set dynamic measurements that were constantly relative to screen size but also gave me control to meet the breakpoint guidelines in the design spec.
+
+* **Note**: This calculation requires use of length unit identifiers, such as *px* or *rem*. In situations where I would normally use a decimal value or percentage, such as line-height, I've used the appropriate length units instead.

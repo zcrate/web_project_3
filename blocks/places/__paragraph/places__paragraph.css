@@ -1,6 +1,6 @@
 .places__paragraph {
   margin: 0 auto 24px;
-  width: 90%;
+  width: calc(288px + 432 * ((100vw - 320px)/448));
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
@@ -13,6 +13,7 @@
 @media screen and (min-width: 768px) {
   .places__paragraph {
     width: 100%;
+    font-size: calc(16px + 2 * ((100vw - 768px)/256))
   }
 }
 

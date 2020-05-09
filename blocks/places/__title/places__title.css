@@ -1,15 +1,16 @@
 .places__title {
   margin: 0 auto;
-  width: 90%;
+  min-width: 288px;
+  width: calc(288px + 432 * ((100vw - 320px)/448));
   font-weight: 900;
-  font-size: 32px;
+  font-size: calc(32px + 10 * ((100vw - 320px)/448));
   line-height: 1.09;
 }
 
 @media screen and (min-width: 768px) {
   .places__title {
     width: 100%;
-    font-size: 42px;
+    font-size: calc(42px + 30 * ((100vw - 768px)/256));
     line-height: 1.1;
   }
 }

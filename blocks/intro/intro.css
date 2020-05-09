@@ -10,8 +10,9 @@
 
 .intro {
   margin: calc(64px + 24 * ((100vw - 320px)/448)) auto;
-  width: 90%;
-  max-width: 984px;
+  min-width: 288px;
+  width: calc(288px + 432 * ((100vw - 320px)/448));
+  max-width: 928px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,11 +27,7 @@
 @media screen and (min-width: 1024px) {
   .intro {
     margin: 92px auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .intro {
-    width: 83%;
+    width: calc(928px + 256 * ((100vw - 1024px)/256));
+    max-width: 984px;
   }
 }

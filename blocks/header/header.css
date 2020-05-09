@@ -4,7 +4,9 @@
 
 .header {
   margin: calc(20px + 14 * ((100vw - 320px)/448)) auto 0;
-  width: 90%;
+  min-width: 288px;
+  width: calc(288px + 432 * ((100vw - 320px)/448));
+  max-width: 928px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,5 +16,12 @@
 @media screen and (min-width: 768px) {
   .header {
     margin: 34px auto 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: calc(928px + 256 * ((100vw - 1024px)/256));
+    max-width: 984px;
   }
 }

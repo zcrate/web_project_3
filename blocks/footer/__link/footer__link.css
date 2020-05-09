@@ -1,17 +1,17 @@
 .footer__link {
   font-weight: 400;
-  font-size: calc(32px - 2.5vw);
+  font-size: calc(24px - 8 * ((100vw - 320px)/448));
   line-height: 1;
   color: #fff;
   text-decoration: none;
-  transition: opacity 0.5s ease;
+  transition: opacity .5s ease;
 }
 
 .footer__link:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .footer__link {
     font-size: 16px;
     line-height: 1.12;
